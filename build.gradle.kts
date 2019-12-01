@@ -37,7 +37,7 @@ val asciidocTask = tasks.named<AsciidoctorJRevealJSTask>("asciidoctorRevealJs") 
     clearSecondarySources()
     attributes(mutableMapOf(
             "partials" to file("src/docs/asciidoc/partials/"),
-            "imagesdir" to file("src/docs/asciidoc/images/"),
+            "imagesdir" to "./images",
             "icons" to "font"
     ))
     resources {

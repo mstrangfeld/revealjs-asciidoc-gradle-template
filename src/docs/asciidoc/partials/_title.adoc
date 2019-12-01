@@ -2,7 +2,7 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
 [#gradle-elephant]
-image::{imagesdir}/gradle-elephant.svg[]
+image::gradle-elephant.svg[]
 
 [#subtitle]
 Gradle is awesome!
