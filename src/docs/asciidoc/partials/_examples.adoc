@@ -1,0 +1,51 @@
+== Let's build something amazing!
+
+=== Coffee App icon:coffee[]
+
+=== !
+
+[source, kotlin]
+----
+package io.strangfeld.coffee
+
+sealed class Coffee(val name: String) {
+    class BlackCoffee: Coffee("black coffee")
+    class Espresso: Coffee("espresso")
+    class Cappuccino: Coffee("cappuccino")
+}
+
+interface CoffeeProvider {
+    fun makeCoffee(coffee: KClass<out Coffee>): Coffee
+}
+
+class CoffeeMachine: CoffeeProvider {
+    override fun makeCoffee(coffee: KClass<out Coffee>): Coffee {
+        println("Making coffee...")
+        val coffee = when(coffee) {
+            Coffee.BlackCoffee::class -> Coffee.BlackCoffee()
+            Coffee.Espresso::class -> Coffee.Espresso()
+            else -> throw Exception("Couldn't make coffee of type $coffee")
+        }
+        println("Coffee is ready!")
+        return coffee
+    }
+}
+
+fun main(args: Array<String>) {
+    println("""
+        Select a coffee:
+        1. Black coffee
+        2. Espresso
+        3. Cappuccino
+    """.trimIndent())
+    val selection = readLine()?.toInt()
+    val coffeeProvider = CoffeeMachine()
+    val coffee = when(selection) {
+        1 -> coffeeProvider.makeCoffee(Coffee.BlackCoffee::class)
+        2 -> coffeeProvider.makeCoffee(Coffee.Espresso::class)
+        3 -> coffeeProvider.makeCoffee(Coffee.Cappuccino::class)
+        else -> throw Exception("Don't know this coffee...")
+    }
+    println("Here is your ${coffee.name}")
+}
+----

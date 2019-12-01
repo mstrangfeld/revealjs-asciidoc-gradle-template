@@ -1,0 +1,6 @@
+== Resources
+
+* https://docs.gradle.org/current
+* https://gradle.org/guides
+* https://gradle.com/training/
+* https://twitter.com/gradle

@@ -1,0 +1,4 @@
+== Thank you for your attention!
+
+[.small]
+This presentation has been build with `Asciidoctor` and `Gradle`

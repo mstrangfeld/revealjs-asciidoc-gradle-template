@@ -1,0 +1,25 @@
+== Why Gradle?
+ifndef::imagesdir[:imagesdir: ../images]
+
+=== Highly customizable
+
+* rich plugin eco-system
+* build scripts using Groovy or Kotlin
+
+=== Fast
+
+* parallel execution of tasks
+* lazy configuration
+* task configuration avoidance
+* incremental builds
+
+=== Powerful
+
+* support for many languages
+* use common build logic across different projects
+* fast development
+
+=== !
+
+[.stretch]
+image::{imagesdir}/gradle_effective_meme.jpeg[]

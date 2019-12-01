@@ -1,0 +1,23 @@
+[subs="attributes"]
+++++
+<script type="text/javascript">
+    window.addEventListener("load", function() {
+
+        revealDiv = document.querySelector("body div.reveal")
+        footer = document.getElementById("logo");
+        revealDiv.appendChild(footer);
+
+    } );
+</script>
+<style>
+    #logo {
+      position: absolute;
+      bottom: 20px;
+      right: 50px;
+      width: 200px;
+    }
+</style>
+<div id="logo">
+    Strangfeld.io
+</div>
+++++

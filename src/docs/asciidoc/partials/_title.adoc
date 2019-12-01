@@ -1,0 +1,12 @@
+== Reveal.js-Asciidoc-Gradle
+ifndef::imagesdir[:imagesdir: ../images]
+
+[#gradle-elephant]
+image::{imagesdir}/gradle-elephant.svg[]
+
+[#subtitle]
+Gradle is awesome!
+
+[#speaker]
+Marvin Strangfeld +
+Strangfeld.io

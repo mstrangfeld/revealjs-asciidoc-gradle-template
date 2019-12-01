@@ -1,0 +1,52 @@
+== Build files
+ifndef::imagesdir[:imagesdir: ../images]
+
+=== !
+
+`build.gradle.kts`::
+[source, kotlin]
+----
+plugins {
+    id("com.openexchange.build.packaging") version "1.4.3"
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation("com.sample:myLib:1.0.0")
+    testImplementation("com.sample:testLib:2.2.+")
+}
+
+val helloWorldTask by tasks.registering {
+    doLast {
+        println("Hello World!")
+    }
+}
+----
+
+=== !
+
+`build.gradle`::
+[source, groovy]
+----
+plugins {
+    id 'com.openexchange.build.packaging' version '1.4.3'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'com.sample:myLib:1.0.0'
+    testImplementation 'com.sample:testLib:2.2.+'
+}
+
+task helloWorldTask {
+    doLast {
+        println "Hello World!"
+    }
+}
+----

@@ -1,0 +1,30 @@
+= Revealjs-Asciidoc-Gradle-Template
+
+Template to create Reveal.js presentations with Asciidoc and Gradle
+
+== Build
+
+[source,shell]
+----
+$ ./gradlew build
+----
+
+You can find the final presentation under `build/presentation`
+
+=== Continuous Build
+
+To automatically rebuild on changes activate the continuous build feature for Gradle.
+
+[source,shell]
+----
+$ ./gradlew -t build
+----
+
+== Customize
+
+To customize the theme you can either edit `src/style/ox-theme.scss` or create your own theme.
+In the `build.gradle.kts` file you have to specify the theme.
+
+== License
+Copyright (C) 2019 Marvin Strangfeld
+Released under the link:Apache-2.0[LICENSE]

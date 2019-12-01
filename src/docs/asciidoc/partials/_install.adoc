@@ -1,0 +1,17 @@
+== How to get Gradle?
+
+=== Use `SDKMAN!`
+
+[source, bash]
+----
+$ curl -s "https://get.sdkman.io" | bash
+$ sdk install gradle
+$ gradle build
+----
+
+=== Use the Gradle Wrapper
+
+[source, bash]
+----
+$ ./gradlew build
+----

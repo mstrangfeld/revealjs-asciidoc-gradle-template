@@ -1,0 +1,21 @@
+ifndef::partials[:partials: partials]
+
+include::{partials}/_footer.adoc[]
+
+include::{partials}/_title.adoc[]
+
+include::{partials}/_whygradle.adoc[]
+
+include::{partials}/_install.adoc[]
+
+include::{partials}/_buildfiles.adoc[]
+
+include::{partials}/_convention.adoc[]
+
+include::{partials}/_lifecycle.adoc[]
+
+include::{partials}/_examples.adoc[]
+
+include::{partials}/_resources.adoc[]
+
+include::{partials}/_end.adoc[]

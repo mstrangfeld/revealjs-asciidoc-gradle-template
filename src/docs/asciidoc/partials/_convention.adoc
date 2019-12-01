@@ -1,0 +1,27 @@
+== Convention over configuration
+
+=== !
+
+[source]
+----
+.
+├── build.gradle.kts
+├── gradle
+│   └── wrapper
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+├── gradlew
+├── gradlew.bat
+├── settings.gradle.kts
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── package
+    │   │       └── App.java
+    │   └── resources
+    └── test
+        ├── java
+        │   └── package
+        │       └── AppTest.java
+        └── resources
+----

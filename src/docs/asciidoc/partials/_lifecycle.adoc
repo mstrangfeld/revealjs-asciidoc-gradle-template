@@ -1,0 +1,31 @@
+== Gradle lifecycle
+
+=== !
+
+[graphviz, "lifecycle_graph", "svg", role="stretch"]
+----
+digraph lifecycle {
+    bgcolor="transparent"
+    Initialization[shape=box][label=<
+    <table border="0" cellborder="0" cellspacing="1">
+        <tr><td align="left"><b>Initialization</b></td></tr>
+        <tr><td align="left">evaluate settings.gradle</td></tr>
+        <tr><td align="left">scan projects</td></tr>
+        <tr><td align="left">create Project instance</td></tr>
+    </table>>][color=white, fontcolor=white, fontname="Open Sans"]
+    Configuration[shape=box][label=<
+    <table border="0" cellborder="0" cellspacing="1">
+        <tr><td align="left"><b>Configuration</b></td></tr>
+        <tr><td align="left">evaluate build.gradle</td></tr>
+        <tr><td align="left">calculate dependencies</td></tr>
+        <tr><td align="left">create task execution graph</td></tr>
+    </table>>][color=white, fontcolor=white, fontname="Open Sans"]
+    Execution[shape=box][label=<
+    <table border="0" cellborder="0" cellspacing="1">
+        <tr><td align="left"><b>Execution</b></td></tr>
+        <tr><td align="left">execute specified tasks</td></tr>
+    </table>>][color=white, fontcolor=white, fontname="Open Sans"]
+    Initialization -> Configuration [type=s][color=white];
+    Configuration -> Execution [type=s][color=white];
+}
+----
