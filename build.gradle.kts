@@ -3,7 +3,7 @@ import org.asciidoctor.gradle.jvm.slides.AsciidoctorJRevealJSTask
 import org.asciidoctor.gradle.jvm.slides.RevealJSOptions
 
 plugins {
-    id("org.asciidoctor.jvm.revealjs") version "3.0.0-alpha.3"
+    id("org.asciidoctor.jvm.revealjs") version "3.2.0"
     id("com.github.salomonbrys.gradle.sass") version "1.2.0"
 }
 
